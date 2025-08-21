@@ -115,7 +115,7 @@ export default function FreelanceCalculatorApp() {
   // Comparador derivaciones
   const realHourly = Math.max(num(state.cmp_price), 0.01) / Math.max(num(state.cmp_hours), 0.1);
   const diffHourly = realHourly - pro.minHourly;
-  const diagText = diffHourly >= 0 ? "Bien: estás cobrando en o por encima de tu mínima." : "Atención: estás por debajo de tu mínima. Subí precio, recortá alcance o extendé plazos.";
+  const diagText = diffHourly >= 0 ? "Bien✅: estás cobrando en o por encima de tu mínima." : "Atención: estás por debajo de tu mínima. Subí precio, recortá alcance o extendé plazos.";
   const diagColor = diffHourly >= 0 ? "#16a34a" : "#ef4444";
 
   // Registro KPIs
